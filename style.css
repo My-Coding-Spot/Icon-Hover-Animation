@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(0, 0, 0);
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    width: 65px;
+    margin: 10px 0;
+    background: #fff;
+    border-radius: 50px;
+    transition: 0.5s;
+    overflow: hidden;
+    cursor: pointer;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    width: 65px;
+    font-size: 2.3em;
+}
+span{
+    display: none;
+    font-family: 'Ubuntu';
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-right: 20px;
+}
+.box:hover{
+    width: 180px;
+    color: #fff;
+    margin: 10px;
+}
+.box:hover span{
+    display: flex;
+}
+.box:nth-child(1):hover{
+    background: #3b5998;
+}
+.box:nth-child(2):hover{
+    background: linear-gradient(45deg, #f09647 0%, #e6554d 25%, #dc2840 50%, #cc2366 75%, #bc1888 100%);
+}
+.box:nth-child(3):hover{
+    background: #1da1f2;
+}
+.box:nth-child(4):hover{
+    background: #ff0000;
+}
+.box:nth-child(5):hover{
+    background: #0e76a8;
+}
